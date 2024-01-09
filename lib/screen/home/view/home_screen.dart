@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: GridView.builder(
                   gridDelegate:SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 2),
                   itemBuilder:(context, index) {
-                    Container(
+                   return  Container(
                       height: 100,
                       width: 100,
                       color: Colors.black,
