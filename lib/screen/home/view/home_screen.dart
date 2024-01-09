@@ -12,8 +12,19 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Center(
-          child: ,
+        body: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Center(
+              child: GridView.builder(
+                  gridDelegate:SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 2),
+                  itemBuilder:(context, index) {
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.black,
+                    );
+                  },)
+          ),
         ),
       ),
     );
